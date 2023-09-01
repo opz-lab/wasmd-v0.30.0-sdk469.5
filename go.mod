@@ -27,7 +27,7 @@ require (
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.14.0
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.4
 	github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
 	github.com/tendermint/tendermint v0.34.26
 	github.com/tendermint/tm-db v0.6.8-0.20221109095132-774cdfe7e6b0
@@ -162,13 +162,13 @@ require (
 )
 
 replace (
-github.com/project-88388/wasmd-v0.30.0-sdk469.5 => github.com/project-88388/wasmd-v0.30.0-sdk469.5 v1.0.0
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
 	// latest grpc doesn't work with with our modified proto compiler, so we need to enforce
 	// the following version across all dependencies.
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
+	github.com/project-88388/wasmd-v0.30.0-sdk469.5 => github.com/project-88388/wasmd-v0.30.0-sdk469.5 v1.0.0
 	// informal tendermint
 	github.com/tendermint/tendermint => github.com/informalsystems/tendermint v0.34.26
 	// tmdb enforcement
