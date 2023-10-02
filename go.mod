@@ -12,7 +12,7 @@ require (
 	github.com/cosmos/iavl v0.19.5
 	github.com/cosmos/ibc-go/v6 v6.1.0
 	github.com/cosmos/interchain-accounts v0.4.3
-	github.com/docker/distribution v2.8.1+incompatible
+	github.com/docker/distribution v2.8.3+incompatible
 	github.com/dvsekhvalnov/jose2go v1.5.0
 	github.com/gogo/protobuf v1.3.3
 	github.com/golang/protobuf v1.5.2
@@ -71,6 +71,7 @@ require (
 	github.com/desertbit/timer v0.0.0-20180107155436-c41aec40b27f // indirect
 	github.com/dgraph-io/badger/v3 v3.2103.2 // indirect
 	github.com/dgraph-io/ristretto v0.1.0 // indirect
+	github.com/distribution/reference v0.5.0 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
 	github.com/felixge/httpsnoop v1.0.1 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
@@ -162,13 +163,13 @@ require (
 )
 
 replace (
-github.com/project-88388/wasmd-v0.30.0-sdk469.5 => github.com/project-88388/wasmd-v0.30.0-sdk469.5 v1.0.0
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.8.1
 	// latest grpc doesn't work with with our modified proto compiler, so we need to enforce
 	// the following version across all dependencies.
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
+	github.com/project-88388/wasmd-v0.30.0-sdk469.5 => github.com/project-88388/wasmd-v0.30.0-sdk469.5 v1.0.0
 	// informal tendermint
 	github.com/tendermint/tendermint => github.com/informalsystems/tendermint v0.34.26
 	// tmdb enforcement
